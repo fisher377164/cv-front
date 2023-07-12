@@ -10,9 +10,9 @@ export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0)
     const [isDeleting, setIsDeleting] = useState(false)
     const [text, setText] = useState('')
-    const [delta, setDelta] = useState(300 - Math.random() * 100)
+    const [delta, setDelta] = useState(200 - Math.random() * 100)
     const toRotate = ['Software Engineer', 'Software Developer', 'Senior Software Engineer']
-    const period = 2000
+    const period = 1000
 
     useEffect(() => {
         let ticker = setInterval(() => {
@@ -22,6 +22,7 @@ export const Banner = () => {
         return () => {
             clearInterval(ticker)
         }
+// eslint-disable-next-line
     }, [text])
 
     const tick = () => {
@@ -41,7 +42,7 @@ export const Banner = () => {
         } else if (isDeleting && updatedText === '') {
             setIsDeleting(false)
             setLoopNum(loopNum + 1)
-            setDelta(500)
+            setDelta(300)
         }
     }
 
@@ -56,9 +57,9 @@ export const Banner = () => {
                                     className={isVisible ? 'animate__animated animate__fadeIn' : 'animate__animated animate__fadeOut'}>
                                     <span className="tagline">Welcome to my Portfolio</span>
                                     <div className="banner-title">
-                                    <h1>{`Hi! I'm Andrii`} <span className="txt-rotate" dataPeriod="1000"
-                                                                 data-rotate='[ "Software Engineer", "Software Developer", "Senior Software Engineer" ]'><span
-                                        className="wrap">{text}</span></span></h1>
+                                        <h1>{`Hi! I'm Andrii`} <span className="txt-rotate" dataPeriod="1000"
+                                                                     data-rotate='[ "Software Engineer", "Software Developer", "Senior Software Engineer" ]'><span
+                                            className="wrap">{text}</span></span></h1>
                                     </div>
                                     <div className="site-warning">
                                         <span>Warning!</span><br />
@@ -70,7 +71,7 @@ export const Banner = () => {
                                             the site. Stay tuned for exciting updates and a fully functional website
                                             coming soon.</p>
                                         <p>Thank you for your understanding.</p>
-                                       <p>Andrii Vdovychenko</p>
+                                        <p>Andrii Vdovychenko</p>
                                     </div>
                                     <a href="#contact" className="lets-contact">Let’s Connect <ArrowRightCircle
                                         size={25} /></a>
