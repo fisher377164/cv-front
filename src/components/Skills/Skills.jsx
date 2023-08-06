@@ -29,10 +29,10 @@ export const Skills = () => {
 
     return (
         <section className="skill" id="skills">
-            <TrackVisibility partialVisibility>
+            <TrackVisibility partialVisibility once>
                 {({ isVisible }) =>
                     <div
-                        className={isVisible ? 'animate__animated animate__fadeInLeft' : 'animate__animated animate__fadeOutRight'}>
+                        className={isVisible ? 'animate__animated animate__fadeIn' : 'animate__animated animate__fadeOut'}>
                         <div className="container">
                             <div className="row">
                                 <div className="col-12">

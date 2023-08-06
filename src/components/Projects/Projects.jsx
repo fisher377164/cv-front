@@ -49,7 +49,7 @@ export const Projects = () => {
                 <Container>
                     <Row>
                         <Col size={12}>
-                            <TrackVisibility partialVisibility>
+                            <TrackVisibility partialVisibility once>
                                 {({ isVisible }) =>
                                     <div
                                         className={isVisible ? 'animate__animated animate__fadeIn' : 'animate__animated animate__fadeOut'}>
@@ -79,7 +79,7 @@ export const Projects = () => {
                                                 </Nav.Item>
                                             </Nav>
                                             <Tab.Content id="slideInUp"
-                                                         className={isVisible ? 'animate__animated animate__slideInUp' : 'animate__animated animate__slideOutRight'}>
+                                                         className={isVisible ? 'animate__animated animate__slideInUp' : 'animate__animated animate__fadeOut'}>
                                                 <Tab.Pane eventKey="first">
                                                     <Row>
                                                         {
