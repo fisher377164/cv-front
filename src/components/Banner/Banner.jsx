@@ -51,15 +51,15 @@ export const Banner = () => {
             <Container>
                 <Row className="aligh-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <TrackVisibility>
+                        <TrackVisibility partialVisibility once>
                             {({ isVisible }) =>
                                 <div
                                     className={isVisible ? 'animate__animated animate__fadeIn' : 'animate__animated animate__fadeOut'}>
                                     <span className="tagline">Welcome to my Portfolio</span>
                                     <div className="banner-title">
-                                        <h1>{`Hi! I'm Andrii`} <span className="txt-rotate" dataPeriod="1000"
-                                                                     data-rotate='[ "Software Engineer", "Software Developer", "Senior Software Engineer" ]'><span
-                                            className="wrap">{text}</span></span></h1>
+                                        <h1>Hi! I'm Andrii, <span className="txt-rotate" dataPeriod="1000"
+                                                                  data-rotate='[ "Software Engineer", "Software Developer", "Senior Software Engineer" ]'>
+                                            <span className="wrap">{text}</span></span></h1>
                                     </div>
                                     <div className="site-warning">
                                         <span>Warning!</span><br />
@@ -79,7 +79,7 @@ export const Banner = () => {
                         </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <TrackVisibility>
+                        <TrackVisibility once>
                             {({ isVisible }) =>
                                 <div
                                     className={isVisible ? 'animate__animated animate__zoomIn' : 'animate__animated animate__zoomOut'}>
