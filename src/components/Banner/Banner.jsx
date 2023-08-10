@@ -73,6 +73,18 @@ export const Banner = () => {
                                         <p>Thank you for your understanding.</p>
                                         <p>Andrii Vdovychenko</p>
                                     </div>
+                                    <div className="summary">
+                                        <p> I am dedicated Java Full-Stack Engineer with over 7 years of commercial
+                                            experience developing robust and scalable applications using Java and
+                                            related technologies. His expertise lies in designing and implementing
+                                            efficient architectures, leveraging Spring Framework and other
+                                            industry-standard tools. He has consistently delivered outstanding results
+                                            throughout his career by leveraging strong analytical skills and attention
+                                            to detail. Experienced in implementing microservices architectures,
+                                            integrating with various APIs, and ensuring optimal performance and
+                                            scalability. Responsible and result-oriented team player who is willing to
+                                            learn new things and improve professional skills. </p>
+                                    </div>
                                     <a href="#contact" className="lets-contact">Let’s Connect <ArrowRightCircle
                                         size={25} /></a>
                                 </div>}
