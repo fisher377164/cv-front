@@ -1,0 +1,6 @@
+export { NavBar } from './NavBar/NavBar'
+export { Banner } from './Banner/Banner'
+export { Skills } from './Skills/Skills'
+export { Projects } from './Projects/Projects'
+export { Contact } from './Contact/Contact'
+export { Footer } from './Footer/Footer'
