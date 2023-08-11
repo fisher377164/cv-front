@@ -82,6 +82,18 @@
         }
     }
 
+    .stay-in-touch-text {
+        font-size: 20px;
+
+        & a {
+            color: #fff;
+
+            &:hover {
+                color: #e1e1e1;
+            }
+        }
+    }
+
     .z-index-overlay {
         z-index: 10;
         position: relative;
