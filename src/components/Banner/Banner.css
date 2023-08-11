@@ -89,6 +89,7 @@
     }
 
     .site-warning {
+        display: none;
         border: #eb60b4 1px solid;
         background: #7d0606;
         color: #cfcfcf !important;
@@ -106,6 +107,7 @@
 
     .summary {
         text-align: justify;
+        margin-left: 10px;
     }
 }
 
