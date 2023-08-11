@@ -21,16 +21,25 @@ export const Skills = () => {
                                 <div className="col-12">
                                     <div className="skill-bx wow zoomIn">
                                         <h2>Skills</h2>
-                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting
-                                            industry.<br /> Lorem
-                                            Ipsum has been the industry's standard dummy text.</p>
-                                        <Carousel responsive={RESPONSIVE} infinite={true}
+                                        <p>Rooted in the world of software engineering, my skill set encompasses a wide
+                                            array of technical proficiencies.
+                                            From coding to architecture design, I have honed my capabilities to create
+                                            efficient and user-friendly digital solutions.
+                                            My skill set ensures a comprehensive approach to project development,
+                                            fostering excellence in every stage of software creation.</p>
+                                        <Carousel responsive={RESPONSIVE}
+                                                  infinite
+                                                  autoPlay
+                                                  draggable
                                                   className="owl-carousel owl-theme skill-slider">
                                             <CaruselItem text="Java" image={meter1} />
                                             <CaruselItem text="Spring Framework" image={meter3} />
                                             <CaruselItem text="SQL" image={meter2} />
+                                            <CaruselItem text="PostgreSQL" image={meter2} />
+                                            <CaruselItem text="Kafka" image={meter2} />
                                             <CaruselItem text="React" image={meter2} />
                                             <CaruselItem text="Redux" image={meter2} />
+                                            <CaruselItem text="Angular" image={meter2} />
                                         </Carousel>
                                     </div>
                                 </div>
